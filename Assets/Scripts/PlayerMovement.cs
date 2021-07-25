@@ -6,40 +6,40 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed;   // Ýleri hareket hýzý
     [SerializeField] float controlSpeed;    // Yön hýzý
+    [SerializeField] private float defaultSwipe = 3.4f;    // Player default kaydýrma mesafesi
 
-    // Touches settings
-    [SerializeField] bool isTouching;   // Ekrana temas kontrolü
-    float touchesPosX;  // Dokunma mesafesi
-    Vector3 direction;  // Hareket yönü
+    Rigidbody rb;
 
-  
-    void Update()
+    private void Start()
     {
-        GetInput();
+        rb = GetComponent<Rigidbody>();
     }
+  
     private void FixedUpdate()
     {
-        if (PlayerManager.instance.playerState == PlayerManager.PlayerState.Move)
-        {   // Eðer playerState(Player durumu) Move(Hareket ediyor) ise sürekli ileri doðru hareket eder
-            transform.position += Vector3.forward * moveSpeed * Time.fixedDeltaTime;
-        }
-        if (isTouching)
-        {   // Eðer ekrana temas olmuþ ise 
-            touchesPosX += Input.GetAxis("Mouse X") * controlSpeed * Time.fixedDeltaTime;
-            // Mosue hareket yönü neresi ise o yönde controlSpeed deðri hýzýnda o yöne hareketin pozisyon deðerini alýr
-        }
-        transform.position = new Vector3(touchesPosX, transform.position.y, transform.position.z);
-        // touchesPosX gelen deðere göre  yönde hareket der
+        MoveInput();
     }
-    void GetInput()
+
+    void MoveInput()
     {
-        if (Input.GetMouseButton(0))
-        {
-            isTouching = true;  // Mosue sol tuþuna baýlmýþsa aktif yap
+        float moveX = transform.position.x; // Player objesinin x pozisyonun deðerini alýr
+        transform.Translate(0, 0, moveSpeed * Time.fixedDeltaTime); // Player objesi oyun baþladýðýnda sürekli ileri hareket eder
+        if (Input.GetKey(KeyCode.LeftArrow) || MobileInput.Instance.swipeLeft)
+        {   // Eðer klavyede sol ok tuþuna basýldýysa yada "MobileInput" scriptinin swipeLeft deðeri True ise  Sola gider               
+            moveX = Mathf.Clamp(moveX - 1 * controlSpeed * Time.fixedDeltaTime, -defaultSwipe, defaultSwipe);
+            // Player objesininn x (sol) pozisyonundaki gideceði min-max sýnýrý belirler
+
+        }
+        else if (Input.GetKey(KeyCode.RightArrow) || MobileInput.Instance.swipeRight)
+        {   // Eðer klavyede sað ok tuþuna basýldýysa yada "MobileInput" scriptinin swipeRight deðeri True ise Saða gider         
+            moveX = Mathf.Clamp(moveX + 1 * controlSpeed * Time.fixedDeltaTime, -defaultSwipe, defaultSwipe);
+            // Player objesinin  x (sað) pozisyonundaki gideceði min-max sýnýrý belirler
         }
         else
         {
-            isTouching = false; // Mosue sol tuþuna basýlmadýysa pasif yap
+            rb.velocity = Vector3.zero; //Eðer sað-sol hareket yapýlmadýysa ArrowPlayer nesnesi sabit kalsýn
         }
+        transform.position = new Vector3(moveX, transform.position.y, transform.position.z);
+        // Player objesinin pozisyonun moveX deðerine x yönünde sað-sola hareket eder y ve z sabit kalýr
     }
 }
