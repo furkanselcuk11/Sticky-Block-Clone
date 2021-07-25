@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float moveSpeed;   // Ýleri hareket hýzý
     [SerializeField] float controlSpeed;    // Yön hýzý
-    [SerializeField] private float defaultSwipe = 3.4f;    // Player default kaydýrma mesafesi
+    [SerializeField] private float defaultSwipe = 1.6f;    // Player default kaydýrma mesafesi
 
     Rigidbody rb;
 
