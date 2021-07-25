@@ -14,7 +14,14 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-  
+    private void Update()
+    {
+        if (PlayerManager.instance.collidedList.Count == 0)
+        {
+            PlayerManager.instance.RestartGame();
+        }
+    }
+
     private void FixedUpdate()
     {
         MoveInput();

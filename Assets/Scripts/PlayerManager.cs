@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -41,5 +42,9 @@ public class PlayerManager : MonoBehaviour
             obj.GetComponent<CollectedObjController>().MakeSphere();
             // CollectedObjController scritinin MakeSphere methodunu çalýþtýr
         }
+    }
+    public void RestartGame()
+    {   // Fonksiyon her çalýþtýðýnda o andaki sanhe yeniden baþlatýlýr
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

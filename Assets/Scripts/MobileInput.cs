@@ -65,7 +65,7 @@ public class MobileInput : MonoBehaviour
     }
     void SwipeMove()
     {   // Kaydýrma hareketinin yönünü belirler
-        // "ArrowController" scripti üzerinde "MoveInput" fonksiyonu saða veya sola hareket yönünü belirtir
+        // "PlayerMovement" scripti üzerinde "MoveInput" fonksiyonu saða veya sola hareket yönünü belirtir
         if (tap)    // Eðer dokunma iþlemi aktif ise çalýþýr
         {
             if (swipe)  // Eðer swipe(kaydýrma) iþlemi aktif ise çalýþýr
