@@ -5,7 +5,7 @@ using UnityEngine;
 public class FirstPlayer : MonoBehaviour
 {
     private Rigidbody rb;
-    public bool isGrounded;    // Zemine Temas ettimi
+    public bool isGrounded;    // Zemine Temas ettimi Kontrol
     void Start()
     {
         rb = GetComponent<Rigidbody>();

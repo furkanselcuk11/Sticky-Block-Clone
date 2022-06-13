@@ -10,7 +10,8 @@ public class CollectedObjController : MonoBehaviour
         sphere = transform.GetChild(0); // "CollectedObj" objesinin ilk çocuðu
 
         if (GetComponent <Rigidbody>()== null)
-        {   // Eðer "CollectedObjController" scriptinin baðlý olduðu objede Rigidbody compenenti yoksa - Yeni bir obje toplanmýþsa
+        {
+            // Eðer "CollectedObjController" scriptinin baðlý olduðu objede Rigidbody compenenti yoksa 
             gameObject.AddComponent<Rigidbody>();   // Yeni toplanan objeye Rigidbody componenti ekle
             Rigidbody rb = GetComponent<Rigidbody>();   // Rigidbody rb olarak tanýmla
             rb.useGravity = false;  // Gravity pasif yap 
@@ -21,12 +22,13 @@ public class CollectedObjController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("collectibleObj"))
-        {   // Eðer temas edilen objenin tagý "collectibleObj" ise 
+        {   // Yeni bir obje toplanmýþsa
+            // Eðer temas edilen objenin tagý "collectibleObj" ise 
             if (!PlayerManager.instance.collidedList.Contains(collision.gameObject))
-            {   //  // Eðer collidedList listesindeki (Toplanan objeler) içinde temas edilen objeler yok ise
-                collision.gameObject.tag = "collectedObj";  // Temas edilen objenin tagýný "collectedObj" yapar
+            {   // Eðer collidedList listesindeki (Toplanan objeler) içinde temas edilen objeler yok ise    / Contains=icerir
+                collision.gameObject.tag = "collectedObj";  // Temas edilen objenin tagýný "collectedObj" yapar - Toplandý olarak atar
                 collision.transform.parent = PlayerManager.instance.collectedPoolTransform; // Temas edilen objeyi "collectedPoolTransform" objesinin alt objesi yapar
-                PlayerManager.instance.collidedList.Add(collision.gameObject);  // Temas edilen objeyi "collidedList" ekler
+                PlayerManager.instance.collidedList.Add(collision.gameObject);  // Temas edilen objeyi "collidedList" listesine ekler
                 collision.gameObject.AddComponent<CollectedObjController>();    // Temas edilen objeye "CollectedObjController" scriptini ekler
             }            
         }
@@ -38,15 +40,16 @@ public class CollectedObjController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("collectibleList"))
-        {   // Eðer temas edilen objenin tagý "collectibleList" ise 
+        {   // Yeni objeler toplanmýþsa
+            // Eðer temas edilen objenin tagý "collectibleList" ise 
             other.gameObject.GetComponent<BoxCollider>().enabled = false;   // Temas edilen objenin BoxCollider componentinin enabled özelliði pasif olur
             other.transform.parent = PlayerManager.instance.collectedPoolTransform; // Temas edilen objeyi "collectedPoolTransform" objesinin alt objesi yapar
             foreach (Transform child in other.transform)
             {   // Temas edilen objenin çocuklarý kadar fonkisyonu döndür
                 if (!PlayerManager.instance.collidedList.Contains(child.gameObject))
-                {   // Eðer collidedList listesindeki (Toplanan objeler) içinde temas edilen objeler yok ise
-                    PlayerManager.instance.collidedList.Add(child.gameObject);  // Temas edilen objeyi "collidedList" ekler
-                    child.gameObject.tag = "collectedObj";  // Temas edilen objenin tagýný "collectedObj" yapar
+                {   // Eðer collidedList listesindeki (Toplanan objeler) içinde temas edilen objeler yok ise / Contains=icerir
+                    PlayerManager.instance.collidedList.Add(child.gameObject);  // Temas edilen objeyi "collidedList" listesine ekler
+                    child.gameObject.tag = "collectedObj";  // Temas edilen objenin tagýný "collectedObj" yapar - Toplandý olarak atar
                     child.gameObject.AddComponent<CollectedObjController>();    // Temas edilen objeye "CollectedObjController" scriptini ekler
                 }
             }
@@ -58,13 +61,14 @@ public class CollectedObjController : MonoBehaviour
         }
     }
     void DestroyTheObject()
-    {   // Temas edilen objerli yok et ve toplanan objeler listesinden çýkar
+    {   // Temas edilen objeleri yok et ve toplanan objeler listesinden çýkar
         PlayerManager.instance.collidedList.Remove(gameObject); // Temas edilen objeyi listeden siler
         Destroy(gameObject);    // Temas edilen objeyi yok eder
         //  Temas edilen objenin temas ettiði pozisyonda Particle efekti oluþtur
         Transform particle = Instantiate(PlayerManager.instance.particlePrefab,transform.position,Quaternion.identity);
 #pragma warning disable CS0618 // Type or member is obsolete
         particle.GetComponent<ParticleSystem>().startColor=PlayerManager.instance.collectedObjMat.color;
+        // particle efektin baþlangýç rengini (Player)objesinin collectedObjMat Materyali ile ayný yapar
 #pragma warning restore CS0618 // Type or member is obsolete
     }
     public void MakeSphere()
@@ -76,11 +80,11 @@ public class CollectedObjController : MonoBehaviour
         sphere.gameObject.GetComponent<SphereCollider>().enabled = true;    // sphere objesinin SphereCollider componentinin enabled özelliði aktif olur
         sphere.gameObject.GetComponent<SphereCollider>().isTrigger = true;  // sphere objesinin SphereCollider componentinin isTrigger özelliði aktif olur
         sphere.gameObject.GetComponent<Renderer>().material = PlayerManager.instance.collectedObjMat;
-        // sphere objesinin Materyal componentine PlayerManager" scriptinden collectedObjMat ekle
+        // sphere objesinin Materyal componentine PlayerManager" scriptinden collectedObjMat materyalinin rengine ata
     }
     public void DropObj()
     {   // Hole (Delik) temas eden sphere objeleri
-        sphere.gameObject.layer = 6;    // sphere objesine layer masek listesinden 6.sýradaki layeri ekler
+        sphere.gameObject.layer = 6;    // sphere objesine layer mask listesinden 6.sýradaki layeri ekler
         sphere.gameObject.GetComponent<SphereCollider>().isTrigger = false;   // sphere objesinin SphereCollider componentinin isTrigger özelliði pasif olur       
         sphere.gameObject.AddComponent<Rigidbody>();     // sphere objesine Rigidbody componenetini ekler
         sphere.GetComponent<Rigidbody>().useGravity = true; 
