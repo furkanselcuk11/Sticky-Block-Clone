@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 3802fb8899dc2df428fb805843045a49, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1661,7 +1661,7 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 2
+  m_ClearFlags: 1
   m_BackGroundColor: {r: 0.23349057, g: 0.61020947, b: 0.9339623, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -1879,9 +1879,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70cdab6b8315ab94b9241b315f525372, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
-  controlSpeed: 3
-  defaultSwipe: 1
+  _moveSpeed: 2
+  _horizontalspeed: 3
+  defaultSwipe: 1.7
 --- !u!114 &1178650643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1897,6 +1897,8 @@ MonoBehaviour:
   tap: 0
   swipeLeft: 0
   swipeRight: 0
+  swipeUp: 0
+  swipeDown: 0
   swipe: 0
 --- !u!54 &1178650644
 Rigidbody:
@@ -3044,6 +3046,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 972856607}
     m_Modifications:
+    - target: {fileID: 1055475364854261884, guid: eb60076181f70d849b4aa1e66a380abe, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1055475365432677051, guid: eb60076181f70d849b4aa1e66a380abe, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3091,6 +3097,10 @@ PrefabInstance:
     - target: {fileID: 1055475365432677052, guid: eb60076181f70d849b4aa1e66a380abe, type: 3}
       propertyPath: m_Name
       value: CollectibleObj
+      objectReference: {fileID: 0}
+    - target: {fileID: 1055475365432677052, guid: eb60076181f70d849b4aa1e66a380abe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb60076181f70d849b4aa1e66a380abe, type: 3}

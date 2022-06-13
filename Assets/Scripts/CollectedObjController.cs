@@ -10,12 +10,12 @@ public class CollectedObjController : MonoBehaviour
         sphere = transform.GetChild(0); // "CollectedObj" objesinin ilk çocuðu
 
         if (GetComponent <Rigidbody>()== null)
-        {   // Eðer "CollectedObjController" scriptinin balý olduðu objede Rigidbody compenenti yoksa - Yeni bir obje toplanmýþsa
+        {   // Eðer "CollectedObjController" scriptinin baðlý olduðu objede Rigidbody compenenti yoksa - Yeni bir obje toplanmýþsa
             gameObject.AddComponent<Rigidbody>();   // Yeni toplanan objeye Rigidbody componenti ekle
             Rigidbody rb = GetComponent<Rigidbody>();   // Rigidbody rb olarak tanýmla
             rb.useGravity = false;  // Gravity pasif yap 
             rb.constraints = RigidbodyConstraints.FreezeAll;
-            GetComponent<Renderer>().material = PlayerManager.instance.collectedObjMat; // Materyal componentine PlayerManager" scriptinden collectedObjMat ekle
+            GetComponent<Renderer>().material = PlayerManager.instance.collectedObjMat; // Materyal componentine PlayerManager" scriptinden collectedObjMat ekler ve toplanan objenin rengini deðiþir
         }
     }
     private void OnCollisionEnter(Collision collision)
@@ -63,7 +63,9 @@ public class CollectedObjController : MonoBehaviour
         Destroy(gameObject);    // Temas edilen objeyi yok eder
         //  Temas edilen objenin temas ettiði pozisyonda Particle efekti oluþtur
         Transform particle = Instantiate(PlayerManager.instance.particlePrefab,transform.position,Quaternion.identity);
+#pragma warning disable CS0618 // Type or member is obsolete
         particle.GetComponent<ParticleSystem>().startColor=PlayerManager.instance.collectedObjMat.color;
+#pragma warning restore CS0618 // Type or member is obsolete
     }
     public void MakeSphere()
     {   // Finish alanýna girince Cube olan objeleri sphere objesine çevir

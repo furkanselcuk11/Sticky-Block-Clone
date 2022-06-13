@@ -1,0 +1,398 @@
+Using pre-set license
+Built from '2021.1/release' branch; Version is '2021.1.1f1 (6fdc41dfa55a) revision 7330881'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19044.1706; Version 2009; 64bit' Language: 'tr' Physical Memory: 8080 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+D:/Unity/Sticky Block Clone
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+49718
+Successfully changed project path to: D:/Unity/Sticky Block Clone
+D:/Unity/Sticky Block Clone
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 81.32 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.1f1 (6fdc41dfa55a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Unity/Sticky Block Clone/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce MX150 (ID=0x1d10)
+    Vendor:   NVIDIA
+    VRAM:     1983 MB
+    Driver:   30.0.15.1295
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56576
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001125 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 86.01 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.849 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003302 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.434 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2674 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 98.8 MB.
+System memory in use after: 98.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3127.
+Total: 3.190000 ms (FindLiveObjects: 0.729500 ms CreateObjectMapping: 0.404000 ms MarkObjects: 1.924500 ms  DeleteObjects: 0.129800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_03/SimpleCumulus_Gradient_03.mat
+  artifactKey: Guid(187c15a21fc7f2346a831d66b7b247cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_03/SimpleCumulus_Gradient_03.mat using Guid(187c15a21fc7f2346a831d66b7b247cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'badc83c56cbdacd71f69f6d8277488e2') in 0.547538 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000507 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_01/SimpleCumulus_Orange_01.mat
+  artifactKey: Guid(c794ae30c13c5324eab85bc85b385008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_01/SimpleCumulus_Orange_01.mat using Guid(c794ae30c13c5324eab85bc85b385008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11080d397ef3cab759ba3dd5a0bb2350') in 3.614116 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_03/SimpleCumulus_Purple_03.mat
+  artifactKey: Guid(1d5f813f9362dbb4a9448c07c320c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_03/SimpleCumulus_Purple_03.mat using Guid(1d5f813f9362dbb4a9448c07c320c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1feba4881af6b575749769121a2c53') in 1.881857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Down.2048x2048.png
+  artifactKey: Guid(581afbc3f91fcb44a9d37f0b310f2ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Down.2048x2048.png using Guid(581afbc3f91fcb44a9d37f0b310f2ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269bea3303dee519f464a4a8b1808122') in 0.068658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_03/SimpleCumulus_Orange_03.mat
+  artifactKey: Guid(e4528f3b287f79645977bbe603cb4c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Orange/SimpleCumulus_Orange_03/SimpleCumulus_Orange_03.mat using Guid(e4528f3b287f79645977bbe603cb4c82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0df592ab6550769889cd794567496e23') in 2.617797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000508 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Right.2048x2048.png
+  artifactKey: Guid(12010e7107ea0c748a9e3e5024f940e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Right.2048x2048.png using Guid(12010e7107ea0c748a9e3e5024f940e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22fdfd595b650739ab1bfc791bb0a54c') in 0.047724 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_05/SimpleCumulus_Purple_05.mat
+  artifactKey: Guid(67c94fca95e32014fb8e3996bdce7fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_05/SimpleCumulus_Purple_05.mat using Guid(67c94fca95e32014fb8e3996bdce7fde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c6e6b69523ba4d012e8457f81c1e25f') in 0.173942 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000363 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_06/SimpleCumulus_Purple_06.mat
+  artifactKey: Guid(3a9630f9c96a5c545a858de0110c1a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_06/SimpleCumulus_Purple_06.mat using Guid(3a9630f9c96a5c545a858de0110c1a8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a1cf3839fdbdd0770f50752d5b1c30c') in 2.532556 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures
+  artifactKey: Guid(a36893ab25ce22a4bb7a81428acfdda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures using Guid(a36893ab25ce22a4bb7a81428acfdda3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c27c543b3488dc495be79988526438e4') in 0.016490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000379 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_07/SimpleCumulus_Gradient_07.mat
+  artifactKey: Guid(84db88626c4e4d14da132a180ec148dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_07/SimpleCumulus_Gradient_07.mat using Guid(84db88626c4e4d14da132a180ec148dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f9c9974b7e8d57b1274bb426489c6e') in 2.230872 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_02/SimpleCumulus_Blue_02.mat
+  artifactKey: Guid(36fb054fe8607ea4e80cc945c01900a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_02/SimpleCumulus_Blue_02.mat using Guid(36fb054fe8607ea4e80cc945c01900a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4b992ae3752ad1845c240c08ff8a5e') in 1.178303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Up.2048x2048.png
+  artifactKey: Guid(fc1dfbda2ec1ca942825044266ff232b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Up.2048x2048.png using Guid(fc1dfbda2ec1ca942825044266ff232b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe227dac30283c10084307a2ea804185') in 0.053926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_04/SimpleCumulus_Purple_04.mat
+  artifactKey: Guid(4c3dc67cbf93c6441aeeb17bc345ce2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_04/SimpleCumulus_Purple_04.mat using Guid(4c3dc67cbf93c6441aeeb17bc345ce2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd77d21dcc89e1cf6b9e188f31e6fc39') in 3.029834 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000388 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient
+  artifactKey: Guid(51baabf89c0aa00459093d8785261bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient using Guid(51baabf89c0aa00459093d8785261bd7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ae85ddd3db5d619402e6f8bcc60944e') in 0.008607 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_06/SimpleCumulus_Blue_06.mat
+  artifactKey: Guid(b7cbdd47460dd2147b5d8204587cc639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_06/SimpleCumulus_Blue_06.mat using Guid(b7cbdd47460dd2147b5d8204587cc639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb8c6afa1dff228ac097cca6ba17ff2') in 3.695971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000528 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_01/SimpleCumulus_Purple_01.mat
+  artifactKey: Guid(5f4c648411fd0304a879e473d0aeb4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Purple/SimpleCumulus_Purple_01/SimpleCumulus_Purple_01.mat using Guid(5f4c648411fd0304a879e473d0aeb4e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9493bf780c576bcac722c26ba96e1df8') in 3.310348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Red/SimpleCumulus_Red_01/SimpleCumulus_Red_01.mat
+  artifactKey: Guid(71b8be5920572164392c4f100bd499a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Red/SimpleCumulus_Red_01/SimpleCumulus_Red_01.mat using Guid(71b8be5920572164392c4f100bd499a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec0d57ebf285de969cc4f7dbdfa87e8') in 2.836989 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_02/SimpleCumulus_Gradient_02.mat
+  artifactKey: Guid(f9c898edef9d7b64f89790e4c635834d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_02/SimpleCumulus_Gradient_02.mat using Guid(f9c898edef9d7b64f89790e4c635834d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a255203b7c05fef7ea13381e02311b10') in 0.149022 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Red/SimpleCumulus_Red_03/SimpleCumulus_Red_03.mat
+  artifactKey: Guid(8a882aa9f2cad274694d1c021ff2b185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Red/SimpleCumulus_Red_03/SimpleCumulus_Red_03.mat using Guid(8a882aa9f2cad274694d1c021ff2b185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5da26feb0785aba4eda963970997aa1f') in 3.579066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000436 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_01/SimpleCumulus_Blue_01.mat
+  artifactKey: Guid(3802fb8899dc2df428fb805843045a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_01/SimpleCumulus_Blue_01.mat using Guid(3802fb8899dc2df428fb805843045a49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cd2c341e9cc35359eb4265ac9bab6dc') in 2.895922 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Front.2048x2048.png
+  artifactKey: Guid(bd6a2333cdb5da448bcc24c2e6b713a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Front.2048x2048.png using Guid(bd6a2333cdb5da448bcc24c2e6b713a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '176210adf83a7283b5b1b82fb8a2dc2b') in 0.395284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_05/SimpleCumulus_Blue_05.mat
+  artifactKey: Guid(216fad10b441e8549873e05938e7a295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/PlainColor/Blue/SimpleCumulus_Blue_05/SimpleCumulus_Blue_05.mat using Guid(216fad10b441e8549873e05938e7a295) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '494320cfe07bf41581f3c7bb57a63dc7') in 3.639328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01
+  artifactKey: Guid(dcf2d95529f9bd64fb5156364735ed6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01 using Guid(dcf2d95529f9bd64fb5156364735ed6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92138c7bbfea7b4ca5ce8642f267a1f') in 0.007237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/SimpleCumulus/Skyboxes
+  artifactKey: Guid(c130f5e5b12752b41a3ca95f11a49efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes using Guid(c130f5e5b12752b41a3ca95f11a49efd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14f382bd9c0d8c4ecd9af664e92cfa01') in 0.010677 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000463 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_05/SimpleCumulus_Gradient_05.mat
+  artifactKey: Guid(00335061f55411f49b0d0eaa9150f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_05/SimpleCumulus_Gradient_05.mat using Guid(00335061f55411f49b0d0eaa9150f4b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89c320b3d1e4b4b14efa90301372f8f1') in 1.187507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_06/SimpleCumulus_Gradient_06.mat
+  artifactKey: Guid(364641eb7d92a7f4b9ebd78b0d887aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_06/SimpleCumulus_Gradient_06.mat using Guid(364641eb7d92a7f4b9ebd78b0d887aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94fc64c8ac74e76fc3c48669fd1d91f0') in 2.503772 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000317 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Left.2048x2048.png
+  artifactKey: Guid(d1fedf8f41b9baa46b15f7c18ee9b0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_01/Textures/Left.2048x2048.png using Guid(d1fedf8f41b9baa46b15f7c18ee9b0e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575b6a93419d3043e014991629a3dd06') in 0.365853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_10/SimpleCumulus_Gradient_10.mat
+  artifactKey: Guid(0a6a46f3bb9d1444ca868d6ee739340a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SimpleCumulus/Skyboxes/Gradient/SimpleCumulus_Gradient_10/SimpleCumulus_Gradient_10.mat using Guid(0a6a46f3bb9d1444ca868d6ee739340a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c1f8eb6607136a5bf4b4f25191f647') in 2.523869 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003488 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.175 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2676 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3246.
+Total: 3.442200 ms (FindLiveObjects: 0.620700 ms CreateObjectMapping: 0.223800 ms MarkObjects: 2.479400 ms  DeleteObjects: 0.115900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003419 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.033 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.4 MB.
+System memory in use after: 184.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3249.
+Total: 2.589000 ms (FindLiveObjects: 0.301400 ms CreateObjectMapping: 0.157200 ms MarkObjects: 2.038900 ms  DeleteObjects: 0.089900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004705 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.65 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.536 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.19 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.4 MB.
+System memory in use after: 184.6 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3252.
+Total: 4.268900 ms (FindLiveObjects: 0.574100 ms CreateObjectMapping: 0.410800 ms MarkObjects: 3.189900 ms  DeleteObjects: 0.090700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.010360 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.966 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3255.
+Total: 3.382600 ms (FindLiveObjects: 0.555400 ms CreateObjectMapping: 0.263700 ms MarkObjects: 2.491000 ms  DeleteObjects: 0.070700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004888 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.72 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.383 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.73 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3258.
+Total: 3.330400 ms (FindLiveObjects: 0.348100 ms CreateObjectMapping: 0.244000 ms MarkObjects: 2.663900 ms  DeleteObjects: 0.072700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006941 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.278 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.56 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3261.
+Total: 2.532500 ms (FindLiveObjects: 0.300200 ms CreateObjectMapping: 0.148700 ms MarkObjects: 2.016200 ms  DeleteObjects: 0.066500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004734 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.438 seconds
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 0.75 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2671 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 184.5 MB.
+System memory in use after: 184.7 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3264.
+Total: 3.287200 ms (FindLiveObjects: 0.371200 ms CreateObjectMapping: 0.228300 ms MarkObjects: 2.619000 ms  DeleteObjects: 0.067300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
